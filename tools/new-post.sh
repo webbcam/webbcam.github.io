@@ -13,24 +13,48 @@
 set -euo pipefail
 
 usage() {
-  echo "Usage: $0 \"Post Title\" [-c \"Cat1,Cat2\"] [-t \"tag1,tag2\"] [-s \"Series Name\"]"
-  exit 1
+  cat <<EOF
+Usage: $0 "Post Title" [options]
+
+Create a new Jekyll post with pre-filled front matter.
+
+Arguments:
+  "Post Title"              Title of the post (required)
+
+Options:
+  -c, --categories "Cat1,Cat2"   Up to 2 categories (comma-separated)
+  -t, --tags       "tag1,tag2"   Tags (comma-separated, lowercase)
+  -s, --series     "Series Name" Series the post belongs to
+  -h, --help                     Show this help message and exit
+
+Examples:
+  $0 "My First Post"
+  $0 "Deep Dive into Rust" -c "Programming,Rust" -t "rust,systems"
+  $0 "Part 2: Advanced Topics" -s "Learning Agentic Coding"
+EOF
+  exit "${1:-1}"
 }
 
 [[ $# -eq 0 ]] && usage
 
-TITLE="$1"
-shift
-
+TITLE=""
 CATEGORIES=""
 TAGS=""
 SERIES=""
+
+# Handle title or flags as first argument
+case "$1" in
+  -h|--help) usage 0 ;;
+  -*) echo "Error: first argument must be the post title."; usage ;;
+  *)  TITLE="$1"; shift ;;
+esac
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
     -c|--categories) CATEGORIES="$2"; shift 2 ;;
     -t|--tags)       TAGS="$2";       shift 2 ;;
     -s|--series)     SERIES="$2";     shift 2 ;;
+    -h|--help)       usage 0 ;;
     *) echo "Unknown option: $1"; usage ;;
   esac
 done
