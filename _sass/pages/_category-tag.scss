@@ -8,7 +8,8 @@
 }
 
 #page-category,
-#page-tag {
+#page-tag,
+#page-series {
   ul > li {
     line-height: 1.5rem;
     padding: 0.6rem 0;
@@ -48,12 +49,14 @@
   font-size: 1.2rem;
 }
 
-#page-category h1 > i {
+#page-category h1 > i,
+#page-series h1 > i {
   font-size: 1.25rem;
 }
 
 #page-category,
 #page-tag,
+#page-series,
 #access-lastmod {
   a:hover {
     @extend %link-hover;

@@ -12,6 +12,7 @@ tabs:
   # format: <filename_without_extension>: <value>
   home: Home
   categories: Categories
+  series: Series
   tags: Tags
   archives: Archives
   about: About
@@ -80,6 +81,12 @@ df:
   archives:
     strftime: "%b"
     dayjs: "MMM"
+
+# series page
+series:
+  post_measure:
+    singular: post
+    plural: posts
 
 # categories page
 categories:
