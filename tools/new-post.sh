@@ -84,7 +84,7 @@ fmt_list() {
 
 {
   echo "---"
-  echo "title: ${TITLE}"
+  echo "title: \"${TITLE}\""
   echo "date: ${DATETIME}"
 
   if [[ -n "$CATEGORIES" ]]; then
