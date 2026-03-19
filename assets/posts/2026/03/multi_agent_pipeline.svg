@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 1020" width="1100" height="1020" style="background:#0b1120">
+<text x="550.0" y="28" font-size="14" fill="#e8f0fa" font-weight="800" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">MULTI-AGENT PIPELINE FOR MARCH MADNESS BRACKET OPTIMIZATION</text>
+<text x="550.0" y="48" font-size="9" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">7 specialized agents · 3-phase pipeline · data-driven bracket with iterative human review</text>
+<rect x="30" y="70" width="1040" height="55" rx="10" fill="#141d2f" stroke="#1e2d45" stroke-width="0.5" opacity="1" stroke-dasharray="6 3"/>
+<text x="550.0" y="84" font-size="9" fill="#5a7090" font-weight="700" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">📊  DATA SOURCES</text>
+<text x="174.0" y="100" font-size="9" fill="#c8d6e5" font-weight="500" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">KenPom · Barttorvik</text>
+<text x="174.0" y="112" font-size="7" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Efficiency rankings</text>
+<text x="362.0" y="100" font-size="9" fill="#c8d6e5" font-weight="500" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">RotoWire · NBC · SI</text>
+<text x="362.0" y="112" font-size="7" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Injury reports</text>
+<text x="550.0" y="100" font-size="9" fill="#c8d6e5" font-weight="500" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">ESPN · CBS · FOX</text>
+<text x="550.0" y="112" font-size="7" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Expert analysis</text>
+<text x="738.0" y="100" font-size="9" fill="#c8d6e5" font-weight="500" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">DraftKings · BetMGM</text>
+<text x="738.0" y="112" font-size="7" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Betting odds</text>
+<text x="926.0" y="100" font-size="9" fill="#c8d6e5" font-weight="500" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">NCAA.com</text>
+<text x="926.0" y="112" font-size="7" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Official bracket</text>
+<line x1="550.0" y1="125" x2="550.0" y2="145" stroke="#3b82f6" stroke-width="1.5"/>
+<polygon points="546.0,143 554.0,143 550.0,150" fill="#3b82f6"/>
+<rect x="20" y="152" width="1060" height="280" rx="12" fill="#0d1f3c" stroke="#1e3a5f" stroke-width="0.8" opacity="1"/>
+<text x="80" y="170" font-size="10" fill="#3b82f6" font-weight="700" text-anchor="start" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">⚡  PHASE 1 — PARALLEL RESEARCH</text>
+<text x="1050" y="170" font-size="8" fill="#1e3a5f" font-weight="400" text-anchor="end" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">No cross-talk between agents (prevents anchoring bias)</text>
+<rect x="63.5" y="186" width="185" height="230" rx="10" fill="#0a1529" stroke="#1e3a5f" stroke-width="0.7" opacity="1"/>
+<rect x="63.5" y="186" width="185" height="4" rx="10" fill="#3b82f6" opacity="0.6"/>
+<rect x="63.5" y="188" width="185" height="2" fill="#0a1529"/>
+<text x="156.0" y="208" font-size="11" fill="#3b82f6" font-weight="700" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">🔢 The Statistician</text>
+<text x="156.0" y="223" font-size="8" fill="#5a7090" font-weight="500" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Agent 1</text>
+<text x="156.0" y="242" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">KenPom off/def efficiency</text>
+<text x="156.0" y="255" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Championship filter</text>
+<text x="156.0" y="268" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Under/overseeded teams</text>
+<text x="156.0" y="281" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Conference strength</text>
+<text x="156.0" y="294" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Stat-based power ranks</text>
+<line x1="75.5" y1="309" x2="236.5" y2="309" stroke="#1e3a5f" stroke-width="0.5" stroke-dasharray="3 2"/>
+<text x="156.0" y="321" font-size="7" fill="#3b82f6" font-weight="700" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">OUTPUT</text>
+<text x="156.0" y="334" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Power rankings</text>
+<text x="156.0" y="346" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Stat profiles per team</text>
+<rect x="260.5" y="186" width="185" height="230" rx="10" fill="#0a1529" stroke="#1e3a5f" stroke-width="0.7" opacity="1"/>
+<rect x="260.5" y="186" width="185" height="4" rx="10" fill="#3b82f6" opacity="0.6"/>
+<rect x="260.5" y="188" width="185" height="2" fill="#0a1529"/>
+<text x="353.0" y="208" font-size="11" fill="#3b82f6" font-weight="700" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">🏥 Injury Scout</text>
+<text x="353.0" y="223" font-size="8" fill="#5a7090" font-weight="500" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Agent 2</text>
+<text x="353.0" y="242" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Player availability</text>
+<text x="353.0" y="255" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">W/L with vs without star</text>
+<text x="353.0" y="268" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Severity tiers (critical/</text>
+<text x="353.0" y="281" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">high/moderate)</text>
+<text x="353.0" y="294" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Return timelines</text>
+<line x1="272.5" y1="309" x2="433.5" y2="309" stroke="#1e3a5f" stroke-width="0.5" stroke-dasharray="3 2"/>
+<text x="353.0" y="321" font-size="7" fill="#3b82f6" font-weight="700" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">OUTPUT</text>
+<text x="353.0" y="334" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Impact tiers</text>
+<text x="353.0" y="346" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Downgrade recs</text>
+<rect x="457.5" y="186" width="185" height="230" rx="10" fill="#0a1529" stroke="#1e3a5f" stroke-width="0.7" opacity="1"/>
+<rect x="457.5" y="186" width="185" height="4" rx="10" fill="#3b82f6" opacity="0.6"/>
+<rect x="457.5" y="188" width="185" height="2" fill="#0a1529"/>
+<text x="550.0" y="208" font-size="11" fill="#3b82f6" font-weight="700" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">📜 The Historian</text>
+<text x="550.0" y="223" font-size="8" fill="#5a7090" font-weight="500" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Agent 3</text>
+<text x="550.0" y="242" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Seed upset rates (1985+)</text>
+<text x="550.0" y="255" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Cinderella stat profiles</text>
+<text x="550.0" y="268" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Coach tourney records</text>
+<text x="550.0" y="281" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Conference trends</text>
+<text x="550.0" y="294" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Geography effects</text>
+<line x1="469.5" y1="309" x2="630.5" y2="309" stroke="#1e3a5f" stroke-width="0.5" stroke-dasharray="3 2"/>
+<text x="550.0" y="321" font-size="7" fill="#3b82f6" font-weight="700" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">OUTPUT</text>
+<text x="550.0" y="334" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Risk assessments</text>
+<text x="550.0" y="346" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Pattern matches</text>
+<rect x="654.5" y="186" width="185" height="230" rx="10" fill="#0a1529" stroke="#1e3a5f" stroke-width="0.7" opacity="1"/>
+<rect x="654.5" y="186" width="185" height="4" rx="10" fill="#3b82f6" opacity="0.6"/>
+<rect x="654.5" y="188" width="185" height="2" fill="#0a1529"/>
+<text x="747.0" y="208" font-size="11" fill="#3b82f6" font-weight="700" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">🏀 Matchup Specialist</text>
+<text x="747.0" y="223" font-size="8" fill="#5a7090" font-weight="500" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Agent 4</text>
+<text x="747.0" y="242" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Style/pace clashes</text>
+<text x="747.0" y="255" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Size vs speed</text>
+<text x="747.0" y="268" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">3PT reliance vs 3PT D</text>
+<text x="747.0" y="281" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Press vulnerability</text>
+<text x="747.0" y="294" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Tactical upset paths</text>
+<line x1="666.5" y1="309" x2="827.5" y2="309" stroke="#1e3a5f" stroke-width="0.5" stroke-dasharray="3 2"/>
+<text x="747.0" y="321" font-size="7" fill="#3b82f6" font-weight="700" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">OUTPUT</text>
+<text x="747.0" y="334" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Matchup edge ratings</text>
+<text x="747.0" y="346" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">HOW underdogs win</text>
+<rect x="851.5" y="186" width="185" height="230" rx="10" fill="#0a1529" stroke="#1e3a5f" stroke-width="0.7" opacity="1"/>
+<rect x="851.5" y="186" width="185" height="4" rx="10" fill="#3b82f6" opacity="0.6"/>
+<rect x="851.5" y="188" width="185" height="2" fill="#0a1529"/>
+<text x="944.0" y="208" font-size="11" fill="#3b82f6" font-weight="700" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">📈 Momentum Tracker</text>
+<text x="944.0" y="223" font-size="8" fill="#5a7090" font-weight="500" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Agent 5</text>
+<text x="944.0" y="242" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Last 10 record + trend</text>
+<text x="944.0" y="255" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Conf tourney results</text>
+<text x="944.0" y="268" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Player hot/cold streaks</text>
+<text x="944.0" y="281" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Close game record</text>
+<text x="944.0" y="294" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Peaking vs fading</text>
+<line x1="863.5" y1="309" x2="1024.5" y2="309" stroke="#1e3a5f" stroke-width="0.5" stroke-dasharray="3 2"/>
+<text x="944.0" y="321" font-size="7" fill="#3b82f6" font-weight="700" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">OUTPUT</text>
+<text x="944.0" y="334" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Momentum scores (1-10)</text>
+<text x="944.0" y="346" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Form tiers</text>
+<line x1="156.0" y1="432" x2="550.0" y2="462" stroke="#1e3a5f" stroke-width="0.8"/>
+<line x1="353.0" y1="432" x2="550.0" y2="462" stroke="#1e3a5f" stroke-width="0.8"/>
+<line x1="550.0" y1="432" x2="550.0" y2="462" stroke="#1e3a5f" stroke-width="0.8"/>
+<line x1="747.0" y1="432" x2="550.0" y2="462" stroke="#1e3a5f" stroke-width="0.8"/>
+<line x1="944.0" y1="432" x2="550.0" y2="462" stroke="#1e3a5f" stroke-width="0.8"/>
+<rect x="480.0" y="438" width="140" height="16" rx="8" fill="#141d2f" stroke="#1e3a5f" stroke-width="0.5" opacity="1"/>
+<text x="550.0" y="446" font-size="7" fill="#3b82f6" font-weight="600" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">5 independent reports</text>
+<polygon points="545.0,460 555.0,460 550.0,466" fill="#ef4444"/>
+<rect x="20" y="462" width="1060" height="160" rx="12" fill="#1f0d0d" stroke="#5f1e1e" stroke-width="0.8" opacity="1"/>
+<text x="80" y="480" font-size="10" fill="#ef4444" font-weight="700" text-anchor="start" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">😈  PHASE 2 — STRESS TEST</text>
+<text x="1050" y="480" font-size="9" fill="#5f1e1e" font-weight="500" text-anchor="end" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Agent 6 — The Devil's Advocate</text>
+<rect x="81.0" y="498" width="148" height="70" rx="6" fill="#1a0f0f" stroke="#5f1e1e" stroke-width="0.4" opacity="1"/>
+<text x="155.0" y="512" font-size="9" fill="#ef4444" font-weight="600" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">① Find consensus</text>
+<text x="155.0" y="530" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">4-5 agents agree</text>
+<text x="155.0" y="542" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">= high confidence</text>
+<line x1="230.0" y1="533.0" x2="238.0" y2="533.0" stroke="#5f1e1e" stroke-width="0.7"/>
+<polygon points="236.0,530.0 236.0,536.0 240.0,533.0" fill="#5f1e1e"/>
+<rect x="239.0" y="498" width="148" height="70" rx="6" fill="#1a0f0f" stroke="#5f1e1e" stroke-width="0.4" opacity="1"/>
+<text x="313.0" y="512" font-size="9" fill="#ef4444" font-weight="600" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">② Find conflicts</text>
+<text x="313.0" y="530" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Agents disagree</text>
+<text x="313.0" y="542" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">= swing games</text>
+<line x1="388.0" y1="533.0" x2="396.0" y2="533.0" stroke="#5f1e1e" stroke-width="0.7"/>
+<polygon points="394.0,530.0 394.0,536.0 398.0,533.0" fill="#5f1e1e"/>
+<rect x="397.0" y="498" width="148" height="70" rx="6" fill="#1a0f0f" stroke="#5f1e1e" stroke-width="0.4" opacity="1"/>
+<text x="471.0" y="512" font-size="9" fill="#ef4444" font-weight="600" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">③ Challenge upsets</text>
+<text x="471.0" y="530" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">What must go right</text>
+<text x="471.0" y="542" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">AND wrong?</text>
+<line x1="546.0" y1="533.0" x2="554.0" y2="533.0" stroke="#5f1e1e" stroke-width="0.7"/>
+<polygon points="552.0,530.0 552.0,536.0 556.0,533.0" fill="#5f1e1e"/>
+<rect x="555.0" y="498" width="148" height="70" rx="6" fill="#1a0f0f" stroke="#5f1e1e" stroke-width="0.4" opacity="1"/>
+<text x="629.0" y="512" font-size="9" fill="#ef4444" font-weight="600" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">④ Challenge chalk</text>
+<text x="629.0" y="530" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Is there an underdog</text>
+<text x="629.0" y="542" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">path we missed?</text>
+<line x1="704.0" y1="533.0" x2="712.0" y2="533.0" stroke="#5f1e1e" stroke-width="0.7"/>
+<polygon points="710.0,530.0 710.0,536.0 714.0,533.0" fill="#5f1e1e"/>
+<rect x="713.0" y="498" width="148" height="70" rx="6" fill="#1a0f0f" stroke="#5f1e1e" stroke-width="0.4" opacity="1"/>
+<text x="787.0" y="512" font-size="9" fill="#ef4444" font-weight="600" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">⑤ Groupthink check</text>
+<text x="787.0" y="530" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Is everyone wrong</text>
+<text x="787.0" y="542" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">for the same reason?</text>
+<line x1="862.0" y1="533.0" x2="870.0" y2="533.0" stroke="#5f1e1e" stroke-width="0.7"/>
+<polygon points="868.0,530.0 868.0,536.0 872.0,533.0" fill="#5f1e1e"/>
+<rect x="871.0" y="498" width="148" height="70" rx="6" fill="#1a0f0f" stroke="#5f1e1e" stroke-width="0.4" opacity="1"/>
+<text x="945.0" y="512" font-size="9" fill="#ef4444" font-weight="600" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">⑥ Rate confidence</text>
+<text x="945.0" y="530" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">High · Medium</text>
+<text x="945.0" y="542" font-size="8" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Low · Coin Flip</text>
+<line x1="121.0" y1="578" x2="979.0" y2="578" stroke="#5f1e1e" stroke-width="0.5" stroke-dasharray="3 2"/>
+<text x="550.0" y="592" font-size="8" fill="#ef4444" font-weight="500" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">OUTPUT: Confidence matrix for every game · Key debates · Swing game analysis</text>
+<line x1="550.0" y1="622" x2="550.0" y2="647" stroke="#22c55e" stroke-width="1.5"/>
+<polygon points="546.0,645 554.0,645 550.0,652" fill="#22c55e"/>
+<rect x="460.0" y="628" width="180" height="16" rx="8" fill="#141d2f" stroke="#5f1e1e" stroke-width="0.5" opacity="1"/>
+<text x="550.0" y="636" font-size="7" fill="#ef4444" font-weight="600" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">All reports + confidence matrix</text>
+<rect x="20" y="652" width="1060" height="130" rx="12" fill="#0d1f14" stroke="#1e5f2e" stroke-width="0.8" opacity="1"/>
+<text x="80" y="670" font-size="10" fill="#22c55e" font-weight="700" text-anchor="start" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">🏗️  PHASE 3 — BUILD</text>
+<text x="1050" y="670" font-size="9" fill="#1e5f2e" font-weight="500" text-anchor="end" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Agent 7 — The Bracket Architect</text>
+<text x="60" y="692" font-size="8" fill="#22c55e" font-weight="700" text-anchor="start" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">DECISION RULES</text>
+<text x="60" y="708" font-size="8" fill="#5a7090" font-weight="400" text-anchor="start" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">• Every pick justified citing which agent(s) drove it</text>
+<text x="60" y="721" font-size="8" fill="#5a7090" font-weight="400" text-anchor="start" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">• Upsets require 2+ agents supporting OR overwhelming evidence</text>
+<text x="60" y="734" font-size="8" fill="#5a7090" font-weight="400" text-anchor="start" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">• Coin flips get a decisive call + noted uncertainty</text>
+<text x="60" y="747" font-size="8" fill="#5a7090" font-weight="400" text-anchor="start" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">• Optimize for expected bracket SCORE, not individual game accuracy</text>
+<text x="60" y="760" font-size="8" fill="#5a7090" font-weight="400" text-anchor="start" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">• No emotional or brand-name bias — only data</text>
+<rect x="680" y="690" width="370" height="16" rx="4" fill="#0a1f14" stroke="#1e5f2e" stroke-width="0.3" opacity="1"/>
+<text x="865" y="698" font-size="8" fill="#c8d6e5" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">📋  Complete 63-game bracket</text>
+<rect x="680" y="708" width="370" height="16" rx="4" fill="#0a1f14" stroke="#1e5f2e" stroke-width="0.3" opacity="1"/>
+<text x="865" y="716" font-size="8" fill="#c8d6e5" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">⚡  All upsets with reasoning</text>
+<rect x="680" y="726" width="370" height="16" rx="4" fill="#0a1f14" stroke="#1e5f2e" stroke-width="0.3" opacity="1"/>
+<text x="865" y="734" font-size="8" fill="#c8d6e5" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">🏟️  Final Four + Championship</text>
+<rect x="680" y="744" width="370" height="16" rx="4" fill="#0a1f14" stroke="#1e5f2e" stroke-width="0.3" opacity="1"/>
+<text x="865" y="752" font-size="8" fill="#c8d6e5" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">📊  Confidence rating per game</text>
+<rect x="680" y="762" width="370" height="16" rx="4" fill="#0a1f14" stroke="#1e5f2e" stroke-width="0.3" opacity="1"/>
+<text x="865" y="770" font-size="8" fill="#c8d6e5" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">🎯  Bracket identity summary</text>
+<line x1="550.0" y1="782" x2="550.0" y2="807" stroke="#fbbf24" stroke-width="1.5"/>
+<polygon points="546.0,805 554.0,805 550.0,812" fill="#fbbf24"/>
+<rect x="20" y="812" width="1060" height="70" rx="12" fill="#1f1a0d" stroke="#5f4e1e" stroke-width="0.8" opacity="1"/>
+<text x="80" y="830" font-size="10" fill="#fbbf24" font-weight="700" text-anchor="start" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">👤  HUMAN REVIEW LOOP</text>
+<text x="1050" y="830" font-size="8" fill="#5f4e1e" font-weight="400" text-anchor="end" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Iterative refinement based on user challenges</text>
+<rect x="80.0" y="842" width="220" height="30" rx="6" fill="#1f1a0d" stroke="#5f4e1e" stroke-width="0.4" opacity="1"/>
+<text x="190.0" y="852" font-size="9" fill="#fbbf24" font-weight="600" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">User challenges picks</text>
+<text x="190.0" y="865" font-size="7" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">"Is Duke really that good</text>
+<polygon points="317.0,854 317.0,860 322.0,857" fill="#5f4e1e"/>
+<line x1="302.0" y1="857" x2="317.0" y2="857" stroke="#5f4e1e" stroke-width="0.7"/>
+<rect x="320.0" y="842" width="220" height="30" rx="6" fill="#1f1a0d" stroke="#5f4e1e" stroke-width="0.4" opacity="1"/>
+<text x="430.0" y="852" font-size="9" fill="#fbbf24" font-weight="600" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Agents re-analyze</text>
+<text x="430.0" y="865" font-size="7" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">New research on Duke's</text>
+<polygon points="557.0,854 557.0,860 562.0,857" fill="#5f4e1e"/>
+<line x1="542.0" y1="857" x2="557.0" y2="857" stroke="#5f4e1e" stroke-width="0.7"/>
+<rect x="560.0" y="842" width="220" height="30" rx="6" fill="#1f1a0d" stroke="#5f4e1e" stroke-width="0.4" opacity="1"/>
+<text x="670.0" y="852" font-size="9" fill="#fbbf24" font-weight="600" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Bracket updates</text>
+<text x="670.0" y="865" font-size="7" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Duke → UConn in East</text>
+<polygon points="797.0,854 797.0,860 802.0,857" fill="#5f4e1e"/>
+<line x1="782.0" y1="857" x2="797.0" y2="857" stroke="#5f4e1e" stroke-width="0.7"/>
+<rect x="800.0" y="842" width="220" height="30" rx="6" fill="#1f1a0d" stroke="#5f4e1e" stroke-width="0.4" opacity="1"/>
+<text x="910.0" y="852" font-size="9" fill="#fbbf24" font-weight="600" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Re-lock picks</text>
+<text x="910.0" y="865" font-size="7" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Updated bracket with</text>
+<line x1="550.0" y1="882" x2="550.0" y2="907" stroke="#a855f7" stroke-width="1.5"/>
+<polygon points="546.0,905 554.0,905 550.0,912" fill="#a855f7"/>
+<rect x="20" y="912" width="1060" height="70" rx="12" fill="#1a0d2a" stroke="#4e1e6f" stroke-width="0.8" opacity="1"/>
+<text x="550.0" y="930" font-size="11" fill="#fbbf24" font-weight="800" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">🏆  FINAL BRACKET OUTPUT</text>
+<rect x="76.0" y="944" width="180" height="30" rx="6" fill="#1a0d2a" stroke="#4e1e6f" stroke-width="0.4" opacity="1"/>
+<text x="166.0" y="954" font-size="9" fill="#a855f7" font-weight="600" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">📋  63-Game Bracket</text>
+<text x="166.0" y="967" font-size="7" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Every pick + reasoning</text>
+<rect x="268.0" y="944" width="180" height="30" rx="6" fill="#1a0d2a" stroke="#4e1e6f" stroke-width="0.4" opacity="1"/>
+<text x="358.0" y="954" font-size="9" fill="#a855f7" font-weight="600" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">📄  7 Agent Reports</text>
+<text x="358.0" y="967" font-size="7" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Standalone analysis docs</text>
+<rect x="460.0" y="944" width="180" height="30" rx="6" fill="#1a0d2a" stroke="#4e1e6f" stroke-width="0.4" opacity="1"/>
+<text x="550.0" y="954" font-size="9" fill="#a855f7" font-weight="600" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">🖼️  Visual Bracket SVG</text>
+<text x="550.0" y="967" font-size="7" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Publication-ready graphic</text>
+<rect x="652.0" y="944" width="180" height="30" rx="6" fill="#1a0d2a" stroke="#4e1e6f" stroke-width="0.4" opacity="1"/>
+<text x="742.0" y="954" font-size="9" fill="#a855f7" font-weight="600" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">⚡  11 Upsets Called</text>
+<text x="742.0" y="967" font-size="7" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Data-driven contrarian picks</text>
+<rect x="844.0" y="944" width="180" height="30" rx="6" fill="#1a0d2a" stroke="#4e1e6f" stroke-width="0.4" opacity="1"/>
+<text x="934.0" y="954" font-size="9" fill="#a855f7" font-weight="600" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">🏆  Champion: Michigan</text>
+<text x="934.0" y="967" font-size="7" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">72% confidence rating</text>
+<text x="550.0" y="1010" font-size="7" fill="#5a7090" font-weight="400" text-anchor="middle" dominant-baseline="central" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Architecture designed for bracket pool optimization · Bias-resistant parallel research → adversarial stress testing → decisive final build</text>
+</svg>
