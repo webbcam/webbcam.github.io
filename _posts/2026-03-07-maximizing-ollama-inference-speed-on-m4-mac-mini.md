@@ -5,7 +5,8 @@ categories: [resources, ollama]
 tags: [ollama, local, qwen3.5, mac, mini, m4, performance]
 ---
 
-> ℹ️ *This doc was generated with the help of Claude for researching how to improve response times of running Qwen3.5:9B on my Mac mini m4 (24GB) using Ollama. Posting this as a guide and resource for referring back to in future*
+> *This doc was generated with the help of Claude for researching how to improve response times of running Qwen3.5:9B on my Mac mini m4 (24GB) using Ollama. Posting this as a guide and resource for referring back to in future*
+{: .prompt-info }
 
 **The base M4 Mac mini with 24GB unified memory can generate tokens at 28–35 tokens/sec with 8B-class models using Q4_K_M quantization** — fast enough for responsive interactive use. The primary bottleneck is the chip’s **120 GB/s memory bandwidth**, not compute,   which means the biggest gains come from keeping models small (lower quantization), enabling flash attention and KV cache quantization, and ensuring 100% GPU offloading via Metal. This guide covers every actionable optimization, from environment variables to system-level tuning, with specific commands you can copy-paste.
 
