@@ -444,3 +444,20 @@ Michigan owns the #1 defense in the nation (opponents shoot 30.2% from 3), a top
 *Analysis compiled March 18, 2026. Sources: KenPom, ESPN BPI, Barttorvik, CBS Sports, SI, Yahoo Sports, FOX Sports, RotoWire, DraftKings Network, SportsBettingDime, NCAA.com. First Four results included (Howard beat UMBC, Texas beat NC State). Remaining First Four games (Prairie View A&M vs Lehigh, Miami OH vs SMU) pending — bracket assumes Lehigh and SMU advance.*
 
 
+---
+
+## Appendix
+
+Below are the individual reports from each Agent:
+
+| Report | Description |
+|---|---|
+| [Complete Bracket](/march-madness/2026/complete-bracket/) | Full 63-game bracket with picks and justifications |
+| [Agent 1: The Statistician](/march-madness/2026/agent-1-statistician/) | Advanced metrics, efficiency rankings, and power ratings |
+| [Agent 2: Injury & Availability Scout](/march-madness/2026/agent-2-injury-scout/) | Real-time roster intelligence and impact tiers |
+| [Agent 3: The Historian](/march-madness/2026/agent-3-historian/) | Historical trends, upset patterns, and Cinderella profiles |
+| [Agent 4: The Matchup Specialist](/march-madness/2026/agent-4-matchup-specialist/) | Style clashes, pace mismatches, and tactical upset paths |
+| [Agent 5: The Momentum Tracker](/march-madness/2026/agent-5-momentum-tracker/) | Recent form, hot streaks, and momentum scores |
+| [Agent 6: The Devil's Advocate](/march-madness/2026/agent-6-devils-advocate/) | Stress-test, confidence matrix, and key debates |
+| [Agent 7: The Bracket Architect](/march-madness/2026/agent-7-bracket-architect/) | Final decisions and bracket identity summary |
+
