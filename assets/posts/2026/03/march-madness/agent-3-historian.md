@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: reading
 title: "Agent 3: The Historian"
 date: 2026-03-18 06:53:42 -0400
 permalink: /march-madness/2026/agent-3-historian/

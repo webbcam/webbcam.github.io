@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: reading
 title: "2026 NCAA Tournament — Complete Bracket"
 date: 2026-03-18 06:53:42 -0400
 permalink: /march-madness/2026/complete-bracket/

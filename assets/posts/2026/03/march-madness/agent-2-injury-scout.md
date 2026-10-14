@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: reading
 title: "Agent 2: Injury & Availability Scout"
 date: 2026-03-18 06:53:42 -0400
 permalink: /march-madness/2026/agent-2-injury-scout/

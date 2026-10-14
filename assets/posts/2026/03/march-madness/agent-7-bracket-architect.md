@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: reading
 title: "Agent 7: The Bracket Architect"
 date: 2026-03-18 06:53:42 -0400
 permalink: /march-madness/2026/agent-7-bracket-architect/

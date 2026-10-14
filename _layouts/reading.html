@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" class="reading">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} — {{ site.title }}</title>
+  <link rel="stylesheet" href="/assets/css/home.css">
+  <link rel="icon" href="/assets/img/favicons/favicon.ico">
+</head>
+<body>
+  <nav class="nav" aria-label="Primary">
+    <a href="/">Cameron Webb</a>
+    <span></span>
+    <div class="nav-right">
+      <a href="/blog/">Blog</a>
+      <a href="/resume/"{% if page.url == "/resume/" %} aria-current="page"{% endif %}>Resume</a>
+      <a href="https://github.com/webbcam">GitHub</a>
+      <a class="btn" href="/">Home</a>
+    </div>
+  </nav>
+  <main class="blog-page">
+    {{ content }}
+  </main>
+</body>
+</html>
