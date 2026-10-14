@@ -7,7 +7,7 @@ mermaid: true
 media_subpath: /assets/posts/2026/03
 ---
 
-![2026 NCAA Tournament Bracket](bracket_2026_complete.svg)
+![2026 NCAA Tournament Bracket](/assets/posts/2026/03/bracket_2026_complete.svg)
 
 ## Overview
 
@@ -18,7 +18,7 @@ Below is my multi-agent March Madness bracket strategy. Rather than throwing a s
 ## The Agent Architecture
 Works as a pipeline with a funnel: five specialist research agents feed into one debate agent, which feeds into one final architect who builds the bracket. Here's the breakdown:
 
-![Multi Agent Pipeline](multi_agent_pipeline.svg)
+![Multi Agent Pipeline](/assets/posts/2026/03/multi_agent_pipeline.svg)
 
 ---
 
