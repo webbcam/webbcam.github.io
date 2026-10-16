@@ -225,6 +225,7 @@ main { padding: 0 24px; }
 }
 
 .blog-page { max-width: 720px; margin: 0 auto; padding: 8vh 24px 80px; }
+.blog-page .lead { font-size: 14px; }
 .blog-page h1 {
   color: var(--ink);
   font-weight: 500;
