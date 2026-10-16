@@ -27,7 +27,7 @@ permalink: /resume/
 
 <section class="cv">
   <h2>Experience</h2>
-  <h3>Amazon Devices</h3>
+  <h3>Amazon Devices - Device OS</h3>
   <p class="meta">Embedded Software Engineer · Jul. 2024 – present · Arlington</p>
   <ul>
     <li>Own the metrics and log telemetry in the on-device diagnostics framework, across an embedded Linux application processor and FreeRTOS MCU and DSP coprocessors, over shared-memory IPC.</li>
@@ -35,7 +35,7 @@ permalink: /resume/
     <li>Own features end to end, from requirements and design docs through design reviews to launch.</li>
     <li>Configured MMU-based memory isolation for shared memory across the ARMv7 application processor, DSP, and MCU.</li>
   </ul>
-  <h3>Amazon Devices</h3>
+  <h3>Amazon Devices - IoT Products</h3>
   <p class="meta">Embedded Software Engineer · Smart Home · Sept. 2019 – Jul. 2024</p>
   <ul>
     <li>Shipped multiple battery-powered Smart Home devices running FreeRTOS</li>
@@ -44,14 +44,14 @@ permalink: /resume/
     <li>Wrote SPI, I2C and UART drivers from datasheets, replacing unreliable vendor drivers</li>
     <li>Profiled power with current measurements and tuned firmware for months to years of battery life</li>
   </ul>
-  <h3>Texas Instruments</h3>
+  <h3>Texas Instruments - Low Power RF MCUs</h3>
   <p class="meta">Software Engineer · Low Power RF · Feb. 2017 – Sept. 2019</p>
   <ul>
     <li>TI-RTOS firmware and reference applications for ARM Cortex-M wireless SoCs, working with BLE, IEEE 802.15.4, and proprietary Sub-1 GHz stacks and their drivers.</li>
     <li>Built hardware-in-the-loop test infrastructure used to validate hundreds of RF and wireless chips.</li>
     <li>Supported customer firmware bring-up, debugging board- and SoC-level hardware and software issues.</li>
   </ul>
-  <h3>Texas Instruments</h3>
+  <h3>Texas Instruments - Processors</h3>
   <p class="meta">Software Intern · Summer 2016 · Germantown, MD</p>
   <ul>
     <li>Built an ultrasound app in C and C++ across a Linux processor and a DSP in a multiprocessor SoC, to process and visualize the signal.</li>
