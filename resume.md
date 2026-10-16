@@ -37,7 +37,13 @@ permalink: /resume/
   </ul>
   <h3>Amazon Devices</h3>
   <p class="meta">Embedded Software Engineer · Smart Home · Sept. 2019 – Jul. 2024</p>
-  <p>&lt;TODO&gt;</p>
+  <ul>
+    <li>Shipped multiple battery-powered Smart Home devices running FreeRTOS</li>
+    <li>Worked from early prototype and board bring-up through production ramps with contract manufacturers and in-field support</li>
+    <li>Designed and shipped on-device low-soap detection for auto-replenishment on a connected soap dispenser, from design doc and simulation to an 8-bit MCU implementation</li>
+    <li>Wrote SPI, I2C and UART drivers from datasheets, replacing unreliable vendor drivers</li>
+    <li>Profiled power with current measurements and tuned firmware for months to years of battery life</li>
+  </ul>
   <h3>Texas Instruments</h3>
   <p class="meta">Software Engineer · Low Power RF · Feb. 2017 – Sept. 2019</p>
   <ul>
